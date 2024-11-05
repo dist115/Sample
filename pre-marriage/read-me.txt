@@ -1,0 +1,32 @@
+This guide reflects a sample implementation of these requirements and solutions we provided, it is not actual
+document as there was independent platform for reporting task and providing guides on how the project workflow.
+
+
+Project Overview
+
+This guide outlines the solution we implemented to address a client’s need for a group-based, role-specific 
+form submission system using a custom WordPress setup.
+
+Project Overview and Client Requirements
+The client used a WordPress plugin to create forms and manage user roles, with predefined roles and permissions.
+Their challenge was managing group submissions while meeting specific workflow requirements, 
+including visibility and edit permissions. The primary requirements were as follows:
+
+Group Submission: Each group of three participants needed a way to submit and manage a shared form.
+Role-Based Access and Permissions:
+
+Student Role: Students could only view other members’ submissions once the counselor provided feedback.
+
+Counselor Role: The counselor, who served as an administrator, needed the ability to provide feedback and 
+grant permissions to edit or resubmit forms.
+
+Solution and Implementation
+To achieve this functionality:
+
+We designed a plugin extension and custom database schema to store and manage group submissions details and feedback.
+Our solution leveraged existing plugin functions and extended them to meet the client’s requirements,
+ensuring seamless integration. Custom functions allowed the counselor to review, provide feedback, 
+and enable form edits for students, creating a controlled, user-friendly workflow.
+This tailored setup delivered the intended workflow precisely as the client envisioned, 
+enhancing their WordPress-based platform's functionality while maintaining stability and performance.
+

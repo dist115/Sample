@@ -1,0 +1,131 @@
+/* public style */
+
+.pm_hide{
+  display:none;
+}
+
+.pm_disable_link {
+  pointer-events: none;
+  /* cursor: default; */
+}
+
+.pm_dis_btn_unlock{
+  pointer-events: none;
+}
+
+.pm-couple-card-hide{
+  display: none;
+}
+
+.pm_cb_inp_disabled {
+  background-color: #f5f5f5;
+  /* Light gray background */
+  color: #999;
+  /* Gray text color */
+  pointer-events: none;
+  /* Ignore pointer events */
+}
+
+.pm_align_items_style {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pm_align_items_style > .pm-align-items-left {
+  flex: 0 0 50%;
+  padding: 0px 5px 0px 0px;
+}
+
+.pm_align_items_style > .pm-align-items-right {
+  flex: 0 0 50%;
+  padding: 0px 0px 0px 5px;
+}
+
+.pm-sbs-buttons {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #383838;
+  font-size: 20px;
+  line-height: 19px;
+  text-transform: inherit;
+  padding: 12px 12px 12px;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  background-color: #fff;
+  width: 160px;
+  cursor: pointer;
+}
+
+.pm-sbs-buttons-active {
+  background: #e3e8ea;
+  border-color: #ddd;
+  color: #272727;
+  padding-bottom: 12px;
+  position: relative;
+  text-align: center;
+  width: 160px;
+  cursor: pointer;
+}
+.pm-side-by-side-buttons-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 40px 0px;
+}
+
+/* Add this CSS to apply the background blur effect */
+.pm-blur {
+  filter: blur(3px);
+  backdrop-filter: blur(3px);
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* Add this CSS to center the popup */
+.pm-unlock-stu-frm-popup {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  z-index: 1000; /* Add a higher z-index to ensure the popup is above other elements */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
+  transition: all 0.9s;
+}
+.pm-unlock-stu-frm-popup-content {
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: relative;
+  width: 380px;
+  text-align: center;
+}
+.pm-cover {
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  position: fixed;
+}
+button.pm-unlock-stu-frm-popup-close {
+  background: #E3E8EA;
+  color: #000;
+  border-radius: 50px;
+  padding: 1px 10px 4px;
+  font-size: 20px;
+  right: 10px;
+  position: absolute;
+  top: 10px;
+  box-shadow: 0.1px 0.1px 4px 0 rgba(0,0,0,0.2), 2px 2px 4px 0 rgba(0,0,0,0.19);
+}
+button.pm-unlock-stu-frm-popup-close:hover {
+}
+
+.pm-unlock-student1, .pm-unlock-student2{
+  cursor: pointer;
+}
